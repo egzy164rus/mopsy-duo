@@ -1,0 +1,54 @@
+# ============================================================================
+# Готовый конфиг для Render.com (функция «Blueprint», то есть «инфраструктура
+# как файл»). С его помощью хостинг сам создаст сервис с нужными настройками.
+#
+# Как пользоваться:
+#   1. Загрузите проект на GitHub (см. docs/ПУБЛИКАЦИЯ.md, шаг 1).
+#   2. В Render: New + → Blueprint → выберите репозиторий.
+#   3. Render прочитает этот файл и предложит создать сервис.
+#   4. Введите значения TELEGRAM_* (они помечены sync: false — это секреты).
+#
+# ВАЖНО про тариф:
+#   • plan: starter — платный инстанс (~$7/мес). Он не «засыпает» и только
+#     на платных тарифах можно подключить диск (disk ниже), чтобы питомцы
+#     не пропадали после перезапуска.
+#   • Хотите попробовать бесплатно? Удалите блоки disk: и plan: — сервис
+#     поднимется на Free. Но тогда данные будут обнуляться при каждом
+#     перезапуске (Free «засыпает» через 15 минут простоя).
+# ============================================================================
+
+services:
+  - type: web
+    name: mopsy-duo
+    runtime: node
+    plan: starter
+    region: frankfurt # ближе к России; альтернативы: oregon, ohio, virginia, singapore
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+
+    # постоянное хранилище: сюда пишется data/db.json
+    disk:
+      name: mopsy-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
+
+    envVars:
+      - key: NODE_VERSION
+        value: '20'
+
+      # 0 — прячет демо-кнопки «Аня»/«Илья» с известным паролем
+      - key: DEMO_MODE
+        value: '0'
+
+      # токен из @BotFather (вписать в панели Render, в файл не сохранять!)
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+
+      # юзернейм бота — для ссылок-приглашений https://t.me/<bot>?startapp=…
+      - key: TELEGRAM_BOT_USERNAME
+        sync: false
+
+      # короткое имя Mini App (если создавали его через /newapp)
+      - key: TELEGRAM_APP_SHORT_NAME
+        sync: false

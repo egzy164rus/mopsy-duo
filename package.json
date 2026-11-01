@@ -1,0 +1,25 @@
+{
+  "name": "mopsy-duo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Мопсик вдвоём — кооперативный тамагочи для Telegram Mini App и браузера",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js",
+    "reset": "node server/seed.js --reset",
+    "check": "node scripts/preflight.js",
+    "purge-demo": "node -e \"import('./server/seed.js').then(m=>m.purgeDemo())\""
+  },
+  "dependencies": {},
+  "keywords": [
+    "telegram-mini-app",
+    "tamagotchi",
+    "realtime",
+    "pug"
+  ]
+}

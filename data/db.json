@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "version": 1,
+    "created_at": 1793518986610,
+    "updated_at": 1793519358119
+  },
+  "users": [
+    {
+      "id": "u_1q4feri",
+      "username": "anya",
+      "display_name": "Аня",
+      "password_salt": "b92ebfe01b0b07893a485ea4091c74d2",
+      "password_hash": "154badda430a76a63a92ee1764b73296d861906b615f7be805f717148c2ff9f1c125dd9f893ef4848c8c1c0c92c89416b541e1f18cddec5dfe3bce01675a63f9",
+      "telegram_id": null,
+      "avatar_emoji": "👩",
+      "created_at": 1793518986702,
+      "last_seen_at": 1793519357783
+    },
+    {
+      "id": "u_2s57mth",
+      "username": "ilya",
+      "display_name": "Илья",
+      "password_salt": "827e3d7d4f23f7260cdbb49f853342dd",
+      "password_hash": "045b8a4a5e81c35f398954cf9cbfa4d5a6d77e4d59b149d89dc67d38b307643f80219dee6e2111c054e4d69be1ec8fac1d91aebd26d4758dfd624ecb891c058f",
+      "telegram_id": null,
+      "avatar_emoji": "🧑",
+      "created_at": 1793518986786,
+      "last_seen_at": 1793518986786
+    }
+  ],
+  "pets": [
+    {
+      "id": "pet_1evwc5n",
+      "name": "Бублик",
+      "color": "fawn",
+      "level": 4,
+      "xp": 190,
+      "coins": 329,
+      "care_points": 158,
+      "room": "room_cozy",
+      "equipped": {
+        "hat": "hat_party",
+        "glasses": null,
+        "bandana": "bandana_red",
+        "outfit": null
+      },
+      "sleep_until": null,
+      "streak": 4,
+      "streak_last_day": "2026-11-01",
+      "last_daily_claim": "2026-11-01",
+      "invite_code": "BUBLIK",
+      "reminder_times": {},
+      "recent_keys": {
+        "mvxiwkwg-rdwmvxq": {
+          "at": 1793518999507,
+          "data": {
+            "ok": true,
+            "message": "Бублик напился 💧",
+            "action": {
+              "id": "act_cf7kmzh",
+              "pet_id": "pet_1evwc5n",
+              "user_id": "u_1q4feri",
+              "type": "water",
+              "text": "Аня поит Бублика",
+              "meta": {
+                "coins": 2,
+                "xp": 5
+              },
+              "created_at": 1793518999507
+            },
+            "rewards": {
+              "coins": 2,
+              "xp": 5,
+              "levelUp": null
+            },
+            "animation": "drink"
+          }
+        }
+      },
+      "created_at": 1792482186787
+    }
+  ],
+  "pet_owners": [
+    {
+      "id": "po_190024a",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "role": "owner",
+      "joined_at": 1793518986786
+    },
+    {
+      "id": "po_2mjadr5",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "role": "co-owner",
+      "joined_at": 1793259786787
+    }
+  ],
+  "pet_stats": [
+    {
+      "pet_id": "pet_1evwc5n",
+      "satiety": 63.6,
+      "hydration": 100,
+      "energy": 70.7,
+      "mood": 85.7,
+      "health": 92,
+      "hygiene": 45.8,
+      "love": 65.9,
+      "updated_at": 1793519357739
+    }
+  ],
+  "actions": [
+    {
+      "id": "act_15tgnjs",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "create",
+      "text": "Мопс Бублик появился дома — теперь о нём заботятся Аня и Илья",
+      "meta": {},
+      "created_at": 1792482186787
+    },
+    {
+      "id": "act_26u71pa",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "type": "feed",
+      "text": "Илья кормит Бублика",
+      "meta": {},
+      "created_at": 1793517426787
+    },
+    {
+      "id": "act_3cl528p",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "play",
+      "text": "Аня играет с Бубликом",
+      "meta": {},
+      "created_at": 1793515866787
+    },
+    {
+      "id": "act_4agitln",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "type": "walk",
+      "text": "Илья гуляет с Бубликом",
+      "meta": {},
+      "created_at": 1793513226787
+    },
+    {
+      "id": "act_51ga3ft",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "water",
+      "text": "Аня поит Бублика",
+      "meta": {},
+      "created_at": 1793511186787
+    },
+    {
+      "id": "act_6ovp520",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "praise",
+      "text": "Аня хвалит Бублика",
+      "meta": {},
+      "created_at": 1793509086787
+    },
+    {
+      "id": "act_7v5uq4i",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "type": "game",
+      "text": "Илья играет в «Ловля косточки» — 78 очков",
+      "meta": {
+        "game": "bone",
+        "score": 78
+      },
+      "created_at": 1793507586787
+    },
+    {
+      "id": "act_8gdgvv2",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "pat",
+      "text": "Аня гладит Бублика",
+      "meta": {},
+      "created_at": 1793505786787
+    },
+    {
+      "id": "act_9k1u55s",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "type": "wash",
+      "text": "Илья купает Бублика",
+      "meta": {},
+      "created_at": 1793425386787
+    },
+    {
+      "id": "act_azyt59i",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "feed",
+      "text": "Аня кормит Бублика",
+      "meta": {},
+      "created_at": 1793421786787
+    },
+    {
+      "id": "act_bas8pr3",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "game",
+      "text": "Аня играет в «Прыжки через препятствия» — 64 очка",
+      "meta": {
+        "game": "jump",
+        "score": 64
+      },
+      "created_at": 1793418186787
+    },
+    {
+      "id": "act_cf7kmzh",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "water",
+      "text": "Аня поит Бублика",
+      "meta": {
+        "coins": 2,
+        "xp": 5
+      },
+      "created_at": 1793518999507
+    },
+    {
+      "id": "act_dargzbj",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "water",
+      "text": "Аня поит Бублика",
+      "meta": {
+        "coins": 2,
+        "xp": 5
+      },
+      "created_at": 1793519357784
+    }
+  ],
+  "inventory": [
+    {
+      "id": "inv_1fmsxn9",
+      "pet_id": "pet_1evwc5n",
+      "item_id": "hat_party",
+      "quantity": 1,
+      "acquired_at": 1793086986787
+    },
+    {
+      "id": "inv_2cicqev",
+      "pet_id": "pet_1evwc5n",
+      "item_id": "glasses_round",
+      "quantity": 1,
+      "acquired_at": 1793086986787
+    },
+    {
+      "id": "inv_34jopol",
+      "pet_id": "pet_1evwc5n",
+      "item_id": "bandana_red",
+      "quantity": 1,
+      "acquired_at": 1793086986787
+    },
+    {
+      "id": "inv_47qzfv0",
+      "pet_id": "pet_1evwc5n",
+      "item_id": "outfit_sweater",
+      "quantity": 1,
+      "acquired_at": 1793086986787
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach_1ls0q21",
+      "pet_id": "pet_1evwc5n",
+      "code": "first_feed",
+      "unlocked_at": 1792827786787
+    },
+    {
+      "id": "ach_2y05of0",
+      "pet_id": "pet_1evwc5n",
+      "code": "first_walk",
+      "unlocked_at": 1792827786787
+    },
+    {
+      "id": "ach_3qz5e4f",
+      "pet_id": "pet_1evwc5n",
+      "code": "first_bath",
+      "unlocked_at": 1792827786787
+    },
+    {
+      "id": "ach_41ebkt9",
+      "pet_id": "pet_1evwc5n",
+      "code": "first_game",
+      "unlocked_at": 1792827786787
+    },
+    {
+      "id": "ach_5uxo767",
+      "pet_id": "pet_1evwc5n",
+      "code": "duo_online",
+      "unlocked_at": 1792827786787
+    },
+    {
+      "id": "ach_6mle1uf",
+      "pet_id": "pet_1evwc5n",
+      "code": "shopper",
+      "unlocked_at": 1792827786787
+    },
+    {
+      "id": "ach_7hbqnlz",
+      "pet_id": "pet_1evwc5n",
+      "code": "streak_3",
+      "unlocked_at": 1793518999508
+    }
+  ],
+  "daily_tasks": [
+    {
+      "id": "task_15wjyv6",
+      "pet_id": "pet_1evwc5n",
+      "date": "2026-11-01",
+      "code": "feed_3",
+      "title": "Покорми мопса 3 раза",
+      "icon": "🍖",
+      "metric": "feed",
+      "target": 3,
+      "coins": 25,
+      "xp": 40,
+      "claimed": false,
+      "is_coop": false
+    },
+    {
+      "id": "task_25gbxn8",
+      "pet_id": "pet_1evwc5n",
+      "date": "2026-11-01",
+      "code": "water_3",
+      "title": "Дай воды 3 раза",
+      "icon": "💧",
+      "metric": "water",
+      "target": 3,
+      "coins": 20,
+      "xp": 30,
+      "claimed": false,
+      "is_coop": false
+    },
+    {
+      "id": "task_3tt1pvk",
+      "pet_id": "pet_1evwc5n",
+      "date": "2026-11-01",
+      "code": "pat_5",
+      "title": "Погладь мопса 5 раз",
+      "icon": "🤍",
+      "metric": "pat",
+      "target": 5,
+      "coins": 15,
+      "xp": 25,
+      "claimed": false,
+      "is_coop": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1p51d9z",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_1q4feri",
+      "type": "partner_action",
+      "icon": "🍖",
+      "text": "Илья кормит Бублика",
+      "read_by": [],
+      "created_at": 1793518986787
+    },
+    {
+      "id": "ntf_2qcs4zr",
+      "pet_id": "pet_1evwc5n",
+      "user_id": null,
+      "type": "reminder",
+      "icon": "🫧",
+      "text": "Бублик немного испачкался, пора искупать",
+      "read_by": [],
+      "created_at": 1793518986787
+    },
+    {
+      "id": "ntf_3appaft",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "type": "partner_action",
+      "icon": "💧",
+      "text": "Аня поит Бублик",
+      "read_by": [],
+      "created_at": 1793518999507
+    },
+    {
+      "id": "ntf_4r8yrwc",
+      "pet_id": "pet_1evwc5n",
+      "user_id": null,
+      "type": "achievement",
+      "icon": "🔥",
+      "text": "Новое достижение: «Три дня подряд» (+40 монет)",
+      "read_by": [],
+      "created_at": 1793518999508
+    },
+    {
+      "id": "ntf_5go32ja",
+      "pet_id": "pet_1evwc5n",
+      "user_id": "u_2s57mth",
+      "type": "partner_action",
+      "icon": "💧",
+      "text": "Аня поит Бублик",
+      "read_by": [],
+      "created_at": 1793519357784
+    }
+  ],
+  "sessions": [
+    {
+      "token": "uKqxVzPpWxtWqXwAeP-zRuHYChmV8rDCvruxQz0QVaU",
+      "user_id": "u_1q4feri",
+      "created_at": 1793518997819,
+      "expires_at": 1798702997819
+    },
+    {
+      "token": "kOQ3efNcb7qEPV2CNs7Sl9--O-7DFyrYxzgthRkOLuE",
+      "user_id": "u_1q4feri",
+      "created_at": 1793519346980,
+      "expires_at": 1798703346980
+    },
+    {
+      "token": "qmrgrzlZKFUZZcWnxX0oh7oNa7hccx_mf8Hu8dJVgE0",
+      "user_id": "u_1q4feri",
+      "created_at": 1793519351461,
+      "expires_at": 1798703351461
+    },
+    {
+      "token": "xDBPNhD7jG2xxxz3_f30f80gDGlHPwtvqaIZWORpOY4",
+      "user_id": "u_1q4feri",
+      "created_at": 1793519354435,
+      "expires_at": 1798703354435
+    },
+    {
+      "token": "UgPuRtpXTLKVqxpoecLc9yh3W4FVZkivMPpjho4qAvs",
+      "user_id": "u_1q4feri",
+      "created_at": 1793519357719,
+      "expires_at": 1798703357719
+    }
+  ],
+  "counters": {
+    "u": 2,
+    "pet": 1,
+    "po": 2,
+    "task": 3,
+    "act": 13,
+    "inv": 4,
+    "ach": 7,
+    "ntf": 5
+  }
+}
